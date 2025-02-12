@@ -1,8 +1,5 @@
 # Synchronizaton The Sleeping Barbers Problem
-
-In this programming assignment we will extend the sleeping-barber problem to a multiple sleeping
-barbers problem where many customers visit a barbershop and receive a haircut service from any one
-of the available barbers in the shop.
+This program is the solution to the classic Sleeping Barber problem extended to included multiple sleeping barbers. 
 
 A barbershop consists of a waiting room with n waiting chairs and a barber room with one barber chair.
 If there are no customers to be served, the barber goes to sleep. If a customer enters the barbershop
@@ -28,7 +25,6 @@ free waiting chairs. If the barbers are asleep, the customer wakes up one of the
 
 ### Testing
 - Compile with “g++ driver.cpp Shop.cpp –o sleepingBarbers –lpthread”
-- Run your program with the following two scenarios:
 ./sleepingBarbers 1 1 10 1000
 ./sleepingBarbers 3 1 10 1000
 
