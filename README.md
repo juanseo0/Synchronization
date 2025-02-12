@@ -14,6 +14,14 @@ shop.
 If all the barbers are busy but chairs are available, then the customer sits in one of the
 free waiting chairs. If the barbers are asleep, the customer wakes up one of the barbers.
 
+## Synchronization Mechanisms
+Mutex (pthread_mutex_lock / pthread_mutex_unlock)
+Ensures only one thread accesses critical sections at a time.
+Condition Variables (pthread_cond_wait / pthread_cond_signal)
+- Used to signal barbers and customers when an event occurs.
+- Barbers sleep when no customers are available and wake up when one arrives.
+- Customers wait for an available barber if all are busy.
+
 ### cpp files
 
 - shop.h/cpp: Sleeping Barbers Problem header and implementation
