@@ -14,7 +14,7 @@ shop.
 If all the barbers are busy but chairs are available, then the customer sits in one of the
 free waiting chairs. If the barbers are asleep, the customer wakes up one of the barbers.
 
-## Synchronization Mechanisms
+### Synchronization Mechanisms
 Mutex (`pthread_mutex_lock` / `pthread_mutex_unlock`)
 - Ensures only one thread accesses critical sections at a time.
 
@@ -27,10 +27,6 @@ Condition Variables (`pthread_cond_wait` / `pthread_cond_signal`)
 
 - `shop.h/cpp`: Sleeping Barbers Problem header and implementation
 - `driver.cpp` Driver file
-
-### Text files for testing
-- 1barber_1chair_10customer_1000stime.txt
-- 3barber_1chair_10customer_1000stime.txt
 
 ### Testing
 - Compile with “g++ driver.cpp Shop.cpp –o sleepingBarbers –lpthread”
